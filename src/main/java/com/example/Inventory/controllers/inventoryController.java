@@ -33,8 +33,8 @@ public class inventoryController {
          e.printStackTrace();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new message("Error occur while saving", "Error"));
      }
-
     }
+
 //post request method to add attributes of phones to the database.
 //one phone could have more than on attributes, tracked based on id.
     @PostMapping("/phone/addPhones/{phoneId}/feature")
