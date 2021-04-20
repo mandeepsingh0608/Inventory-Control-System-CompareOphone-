@@ -1,7 +1,8 @@
 ## CompareOPhone App
 **This App to compare two phones features**
 
-##How I got an Idea About this App
+## How I got an Idea About this App
+
 Currently in which company I am working,that is a cell phone retails company.EveryTime when customer ask the difference between phones we offer or ask about features of phones. we have to search on google.Which creates a gap between communications. which is Time consuming and sometimes causes losing a sale. To resolve this problem I come up with idea to develop this app. For more 
 detail see Features section below.
 
