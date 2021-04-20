@@ -16,6 +16,7 @@ public class phones {
  @GeneratedValue(strategy = GenerationType.AUTO)
  private int id;
  @NotBlank
+ @Column (unique = true)
  private String brand;
  @NotBlank
  private String model;

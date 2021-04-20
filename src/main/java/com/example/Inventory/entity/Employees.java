@@ -30,6 +30,7 @@ public class Employees{
     private String Name;
     @Email
     @NotBlank
+    @Column(unique = true)
     private String email;
     @NotBlank
     private String password;

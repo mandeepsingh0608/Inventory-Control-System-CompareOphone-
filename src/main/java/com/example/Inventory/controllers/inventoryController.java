@@ -7,6 +7,9 @@ import com.example.Inventory.messages.message;
 import com.example.Inventory.repository.employeeRepository;
 import com.example.Inventory.services.phoneService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -56,9 +59,10 @@ public class inventoryController {
 
 //getting list of all phones
     @GetMapping("/phone/phonelist")
-    public ResponseEntity<List<phones>> retrievePhones(){
+    public ResponseEntity<Page<phones>> retrievePhones(Pageable pageable){
      try{
-        return ResponseEntity.ok().body(phoneService.getAllPhones());
+         Pageable pageable1= PageRequest.of(0,5);
+        return ResponseEntity.ok().body(phoneService.getAllPhones(pageable1));
 
      }catch (Exception e){
          e.printStackTrace();

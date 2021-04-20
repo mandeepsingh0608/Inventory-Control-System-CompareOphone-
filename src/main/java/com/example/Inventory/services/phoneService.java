@@ -7,6 +7,8 @@ import com.example.Inventory.repository.employeeRepository;
 import com.example.Inventory.repository.featureRepository;
 import com.example.Inventory.repository.phoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,9 +45,9 @@ this.phoneRepository.save(phone);
 
 
 //getting list of all phones
-public List<phones> getAllPhones() {
-    this.phoneRepository.findAll().forEach(ListofPhones::add);
-return ListofPhones;
+public Page<phones> getAllPhones(Pageable pageable) {
+return this.phoneRepository.findAll(pageable);
+
 }
 //getting list of phone by brands name ond By model name
 public List<phones> getbyBrandAndbyModel(String brand,String model){
