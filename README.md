@@ -1,5 +1,5 @@
 ## CompareOPhone App
-**This App to compare two phones features**
+**This is an App to compare phones and its features**
 
 ## How I got an Idea About this App
 
