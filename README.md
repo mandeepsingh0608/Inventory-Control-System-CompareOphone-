@@ -1,5 +1,5 @@
 ## CompareOPhone App
-**This is an App to compare phones and its features**
+**Inventory Control System along with product comparision feature**
 
 ## How I got an Idea About this App
 
